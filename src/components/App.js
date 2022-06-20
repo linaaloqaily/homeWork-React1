@@ -4,7 +4,7 @@ import Cat from "./Cat";
 function App() {
   return (
     <div className="App">
-      <h1>Cats</h1>
+      <h1>Cat Store</h1>
       <Cat />
     </div>
   );
