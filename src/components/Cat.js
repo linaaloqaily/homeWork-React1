@@ -5,7 +5,11 @@ const CatContainer = (c) => {
   return (
     <div>
       <img class="cat-image" src={c.image} alt="Cat" />
-      <h2>Name: {c.name}</h2>
+      {c.name ? (
+        <h2>Name:{c.name}</h2>
+      ) : (
+        <h2>You have to provide a cat name</h2>
+      )}
       <h3>Age: {c.age} years</h3>
     </div>
   );
@@ -26,7 +30,6 @@ const Cat = () => {
       />
       <CatContainer
         image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1HpfMJ4r3K_YmL_NuON21PtNSwfT5Cvy-bQ&usqp=CAU"
-        name="Cat 3"
         age={2}
       />
       <CatContainer
