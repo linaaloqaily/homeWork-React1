@@ -1,0 +1,15 @@
+.App {
+    text-align: center;
+    background-color: rgb(202, 182, 185);
+  }
+
+  #cats-container {
+    display: grid;
+    grid-template-columns:auto auto;
+  
+  }
+  
+  .cat-image {
+    height: 50vh;
+    width: 50vh;
+  }
